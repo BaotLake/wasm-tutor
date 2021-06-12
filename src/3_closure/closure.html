@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Closure</title>
+        <script>
+            function f1() {
+                let answer = 4200
+
+                return function f2() {
+                    return answer
+                }
+            }
+
+            const jsShowMeTheAnswer = f1()
+        </script>
+        <script src="a.out.js"></script>
+    </head>
+    <body>
+        <main>
+            <p>
+                <ul>
+                    <code>Module._func()</code>
+                </ul>
+            </p>
+        </main>
+    </body>
+</html>

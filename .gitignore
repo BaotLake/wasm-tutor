@@ -1,0 +1,9 @@
+
+FFmpeg
+.vscode
+.DS_Store
+**/.DS_Store
+**/a.out.js
+**/a.out.wasm
+*.mp4
+*.webm

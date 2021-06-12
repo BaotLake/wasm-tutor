@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title></title>
+         <script src="a.out.js"></script>
+    </head>
+    <body>
+        <pre>
+            <code>
+                <span>var ptr = Module._fibonacci(10);</span>
+                <span>if (ptr == 0) return;</span>
+                <span>var str = '';</span>
+                <span>for (var i = 0; i < 10; i++){</span>
+                <span>str += Module.HEAP32[(ptr >> 2) + i];</span>
+                <span>str += '';</span>
+                <span>}</span>
+                <span>console.log(str);</span>
+                <span>Module._free_buf(ptr);</span>
+            </code>
+        </pre>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>4 mem.cc</title>
+        <script src="a.out.js"></script>
+        <script></script>
+    </head>
+    <body>
+        <section>
+            <pre>
+                <code>
+                    <span>var int_ptr = Module._get_int_ptr(); </span>
+                    <span>var int_value = Module.HEAP32[int_pttr >> 2];</span>
+                    <span>console.log("JS{int_value:" + int_value + "}");</span>
+                </code>
+            </pre>
+
+            <pre>
+                <code>
+                    <span>var double_ptr = Module._get_double_ptr();</span>
+                    <span>var double_value = Module.HEAPF64[double_ptr >> 3];</span>
+                    <span>console.log("JS{double_value:}" + double_value + "}");</span>
+                </code>
+            </pre>
+
+            <pre>
+                <code>
+                    <span>Module.HEAP32[int_ptr >> 2] = 13;</span>
+                    <span>Module.HEAPF64[double_ptr >> 3] = 123456.789</span>
+                    <span>Module._print_data();</span>
+                </code>
+            </pre>
+        </section>
+    </body>
+</html>
