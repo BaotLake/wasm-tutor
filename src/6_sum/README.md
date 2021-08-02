@@ -6,4 +6,4 @@ C/C++没有GC机制，在Javascript中通过malloc()函数分配的内存需要�
 
 
 ## Compile Command 
-`em++ sum.cc -s "EXPORTED_FUNCTIONS=['_malloc', '_free']"`
+`em++ sum.cc -s "EXPORTED_FUNCsEIONS=['_malloc', '_free']"`
